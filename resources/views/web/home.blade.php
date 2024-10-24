@@ -60,13 +60,6 @@
                 </div>
             </div><!-- End Gallery Item -->
 
-            <div class="col-xl-2 col-lg-3 col-md-6">
-                <div class="gallery-item h-100">
-                    <a href="{{route('play.game' , 'tablaclassics')}}">
-                        <img src="{{asset('assets/img/games/05.png')}}" class="img-fluid" alt="">
-                    </a>
-                </div>
-            </div><!-- End Gallery Item -->
 
             <div class="col-xl-2 col-lg-3 col-md-6">
                 <div class="gallery-item h-100">
@@ -86,6 +79,24 @@
 
             <div class="col-xl-2 col-lg-3 col-md-6">
                 <div class="gallery-item h-100">
+                    <a href="{{route('play.game' , 'wordconnect')}}">
+
+                        <img src="{{asset('assets/img/games/10.png')}}" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div><!-- End Gallery Item -->
+
+            <div class="col-xl-2 col-lg-3 col-md-6">
+                <div class="gallery-item h-100">
+                    <a href="{{route('play.game' , 'roulettecasino')}}">
+
+                        <img src="{{asset('assets/img/games/11.png')}}" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div><!-- End Gallery Item -->
+            
+            <div class="col-xl-2 col-lg-3 col-md-6">
+                <div class="gallery-item h-100">
                     <a href="{{route('play.game' , 'filltheline')}}">
                         <img src="{{asset('assets/img/games/08.png')}}" class="img-fluid" alt="">
                     </a>
@@ -101,14 +112,16 @@
                 </div>
             </div><!-- End Gallery Item -->
 
+
+
             <div class="col-xl-2 col-lg-3 col-md-6">
                 <div class="gallery-item h-100">
-                    <a href="{{route('play.game' , 'bouncingball')}}">
-
-                        <img src="{{asset('assets/img/games/10.png')}}" class="img-fluid" alt="">
+                    <a href="{{route('play.game' , 'tablaclassics')}}">
+                        <img src="{{asset('assets/img/games/05.png')}}" class="img-fluid" alt="">
                     </a>
                 </div>
             </div><!-- End Gallery Item -->
+
         </div>
 
     </div>
