@@ -293,6 +293,66 @@ class FrontPageController extends Controller
             $bannerImage = asset('assets/img/games/009.png');
 
         }
+        elseif ($gameSlug == 'wordconnect') {
+            $name = 'Word Scramble Puzzle';
+            $headerShortContent = 'Get ready for a thrilling word puzzle adventure! Connect letters, form words, and unlock levels. 🧠';
+            
+            $content .= '<div class="portfolio-description">
+                <h2>🧩 Word Scramble Puzzle: A Brain-Teasing Word Adventure! 🔠</h2>
+            
+                <h3>🕹️ How to Play:</h3>
+                <p>🔗 Connect letters on the table to form hidden words and unlock new levels. Use hints and power-ups to overcome challenging puzzles!</p>
+            
+                <h3>💎 Features:</h3>
+                <ul>
+                    <li>🧠 <strong>Endless Puzzle Fun:</strong> Enjoy countless levels and word combinations, ensuring non-stop fun!</li>
+                    <li>🔍 <strong>Challenging Gameplay:</strong> Test your brainpower with puzzles that progressively increase in difficulty.</li>
+                    <li>🎨 <strong>Beautiful Graphics:</strong> Immerse yourself in stunning, visually appealing game design.</li>
+                    <li>🚀 <strong>Power-Ups & Hints:</strong> Struggling with a tough level? Use power-ups and hints to help you progress faster.</li>
+                    <li>👤 <strong>Personalized Profile:</strong> Create your unique profile, update your name and avatar, and track your progress over time.</li>
+                    <li>🎰 <strong>Spin and Win:</strong> Try your luck with the daily spin wheel to earn coins and unlock special rewards.</li>
+                    <li>💰 <strong>In-App Purchases:</strong> Purchase additional coins to keep the fun going and access exclusive content.</li>
+                </ul>
+            
+                <p>Start your word puzzle journey today with Word Scramble Puzzle! 🎉 Download now and put your vocabulary skills to the ultimate test! 🚀</p>
+            </div>';
+            $category = 'Puzzle Game';
+            $bannerImage = asset('assets/img/games/010.png');
+
+        }
+        elseif ($gameSlug == 'roulettecasino') {
+            $name = 'Roulette Casino';
+            $headerShortContent = 'Step into the world of luxury and high-stakes excitement with the premier casino app, Roulette Casino. 🎲';
+            
+            $content .= '<div class="portfolio-description">
+                <h2>🎲 Roulette Casino: The Ultimate High-Stakes Experience! 💎</h2>
+            
+                <h3>🕹️ How to Play:</h3>
+                <p>🎯 Spin the roulette wheel, place your bets, and watch the action unfold in a sophisticated virtual casino. Whether you\'re betting on red or black, odd or even, Roulette Casino offers endless thrills and opportunities to win big.</p>
+            
+                <h3>💎 Features:</h3>
+                <ul>
+                    <li>🌟 <strong>Unmatched Gaming Excellence:</strong> Immerse yourself in a world where gaming excellence is the norm, with the finest casino entertainment at your fingertips.</li>
+                    <li>🎲 <strong>Roulette Redefined:</strong> Experience roulette like never before, with captivating graphics and smooth gameplay designed for modern players.</li>
+                    <li>💎 <strong>Luxurious Casino Atmosphere:</strong> Indulge in a high-end virtual casino environment, where every detail is designed to enhance your gaming experience.</li>
+                    <li>📈 <strong>Strategic Gameplay:</strong> Employ tactical betting strategies and put your skills to the test with every spin of the wheel.</li>
+                    <li>🚀 <strong>Best Casino App:</strong> Recognized as the leading casino app, enjoy a smooth and intuitive interface that ensures a premium gaming experience.</li>
+                    <li>🤑 <strong>Big Wins Await:</strong> Embark on a thrilling journey where big wins are not just possible, but highly achievable with every spin!</li>
+                </ul>
+            
+                <h3>🌐 Why Choose Roulette Casino?</h3>
+                <ul>
+                    <li>🔝 <strong>Cutting-Edge Technology:</strong> Powered by the latest technology, Roulette Casino guarantees a sophisticated, reliable, and seamless gaming experience.</li>
+                    <li>🌈 <strong>Variety of Games:</strong> While roulette is the crown jewel, explore a wide selection of other exciting casino games all in one app.</li>
+                    <li>🔐 <strong>Safe and Secure:</strong> With top-notch security measures in place, enjoy your gaming experience with complete peace of mind.</li>
+                </ul>
+            
+                <p>Join Roulette Casino today and experience the perfect combination of luxury, strategy, and big wins! 🚀</p>
+            </div>';
+            $category = 'Casino Game';
+            $bannerImage = asset('assets/img/games/011.png');
+
+        }
         else{
             return view('web.404');
         }
@@ -302,23 +362,27 @@ class FrontPageController extends Controller
     public function playGameIfream() {
         $gameSlug = basename($_SERVER['REQUEST_URI']);
         if ( $gameSlug == 'blitz21') {
-            $gameUrl = 'https://finixgamesstudio.com/webgl-word-connect/';
+            $gameUrl = 'https://finixgamesstudio.com/webgl-21-blitz/';
         }elseif($gameSlug == 'blackjack21'){
-             $gameUrl = '';
+             $gameUrl = 'https://finixgamesstudio.com/webgl-21-black-jack/';
         }elseif($gameSlug == 'callbreak'){
-             $gameUrl = ' ';
+             $gameUrl = 'https://finixgamesstudio.com/webgl-call-break/';
         }elseif($gameSlug == 'spades'){
-            $gameUrl = ' ';
+            $gameUrl = 'https://finixgamesstudio.com/webgl-spades/';
         }elseif($gameSlug == 'tablaclassics'){
-             $gameUrl = ' ';
+             $gameUrl = '#';
         }elseif($gameSlug == 'learnframanimal'){
-             $gameUrl = ' ';
+             $gameUrl = 'https://finixgamesstudio.com/webgl-learning-animal/';
         }elseif($gameSlug == 'snakes'){
-             $gameUrl = ' ';
+             $gameUrl = 'https://finixgamesstudio.com/webgl-snake-offline/';
         }elseif ($gameSlug == 'filltheline') {
-            $gameUrl = ' ';
+            $gameUrl = '#';
         }elseif ($gameSlug == 'bouncingball') {
-            $gameUrl = ' ';
+            $gameUrl = '#';
+        }elseif ($gameSlug == 'wordconnect') {
+            $gameUrl = 'https://finixgamesstudio.com/webgl-word-connect/';
+        }elseif ($gameSlug == 'roulettecasino') {
+            $gameUrl = 'https://finixgamesstudio.com/webgl-roulette/';
         }else{
             return view('web.404');
         }
