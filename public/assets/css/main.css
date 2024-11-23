@@ -1455,3 +1455,10 @@ section,
   margin: auto;
   height: 75vh;
 }
+
+/* Single page CSS */
+.single-page-css{
+  background-color: #fff;
+  text-align: center!important;
+  width: 400px;
+}
