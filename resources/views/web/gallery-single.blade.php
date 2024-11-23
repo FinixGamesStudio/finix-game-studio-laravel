@@ -47,7 +47,7 @@
                 <li><strong>Client</strong> Finix Game Studio</li>
                 <li><strong>Project date</strong> 01 March, 2019</li>
                 <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-                <li><a href="{{ !empty($playUrl) ? $playUrl : '#' }}" class="btn-visit align-self-start">Play Game</a></li>
+                <li><a href="{{route('play.game.ifream' , $gameSlug)}}" class="btn-visit align-self-start">Play Game</a></li>
               </ul>
             </div>
           </div>

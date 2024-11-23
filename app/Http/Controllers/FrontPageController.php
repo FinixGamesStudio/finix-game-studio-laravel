@@ -362,27 +362,27 @@ class FrontPageController extends Controller
     public function playGameIfream() {
         $gameSlug = basename($_SERVER['REQUEST_URI']);
         if ( $gameSlug == 'blitz21') {
-            $gameUrl = asset('public/assets/webgl-21-blitz/index.html');
+            $gameUrl = asset('assets/webgl-21-blitz/index.html');
         }elseif($gameSlug == 'blackjack21'){
-             $gameUrl = asset('public/assets/webgl-21-black-jack/index.html');
+             $gameUrl = asset('assets/webgl-21-black-jack/index.html');
         }elseif($gameSlug == 'callbreak'){
-             $gameUrl = asset('public/assets/webgl-call-break/index.html');
+             $gameUrl = asset('assets/webgl-call-break/index.html');
         }elseif($gameSlug == 'spades'){
-            $gameUrl = asset('public/assets/webgl-spades/index.html');
+            $gameUrl = asset('assets/webgl-spades/index.html');
         }elseif($gameSlug == 'tablaclassics'){
              $gameUrl = '#';
         }elseif($gameSlug == 'learnframanimal'){
-             $gameUrl = asset('public/assets/webgl-learning-animal/index.html');
+             $gameUrl = asset('assets/webgl-learning-animal/index.html');
         }elseif($gameSlug == 'snakes'){
-             $gameUrl = asset('public/assets/webgl-snake-offline/index.html');
+             $gameUrl = asset('assets/webgl-snake-offline/index.html');
         }elseif ($gameSlug == 'filltheline') {
             $gameUrl = '#';
         }elseif ($gameSlug == 'bouncingball') {
             $gameUrl = '#';
         }elseif ($gameSlug == 'wordconnect') {
-            $gameUrl = asset('public/assets/webgl-word-connect/index.html');
+            $gameUrl = asset('assets/webgl-word-connect/index.html');
         }elseif ($gameSlug == 'roulettecasino') {
-            $gameUrl = asset('public/assets/webgl-roulette/index.html');
+            $gameUrl = asset('assets/webgl-roulette/index.html');
         }else{
             return view('web.404');
         }

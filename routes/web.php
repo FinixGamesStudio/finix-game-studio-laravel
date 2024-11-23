@@ -14,9 +14,9 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/single-pagee', function () {
+    return view('web.single-add-page');
+});
 
 
 Route::get('/', [FrontPageController::class, 'index'])->name('home');

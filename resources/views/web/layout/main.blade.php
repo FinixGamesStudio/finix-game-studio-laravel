@@ -6,8 +6,53 @@
 
 @include('web.layout.header')
   <main class="main">
-    @yield('content')
+    <div class="row">
+      <!-- Left Side Add -->
+      <div class="col-lg-2">
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-5918737477932362"
+          data-ad-slot="8739555900"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+      </div>
+      <!-- Center Content -->
+      <div class="col-lg-8">
+         @yield('content')
+      </div>
+      <!-- Right Side Add -->
+      <div class="col-lg-2">
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-5918737477932362"
+          data-ad-slot="8739555900"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+      </div>
+    </div>
   </main>
+
+  <!-- bottom_ad -->
+   <div style="text-align:center; width: 100%;">
+
+<!-- Footer Add -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5918737477932362"
+     data-ad-slot="8739555900"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
   @include('web.layout.footer')
 
   <!-- Scroll Top -->
