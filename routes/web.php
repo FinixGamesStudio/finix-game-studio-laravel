@@ -14,7 +14,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/single-pagee', function () {
+Route::get('/single-page', function () {
     return view('web.single-add-page');
 });
 
